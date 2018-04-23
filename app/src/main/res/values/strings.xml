@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Qibla Direction</string>
+    <string name="QiblaDirection">Qibla  Direction</string>
+    <string name="PrayerTiming">Prayer Timing</string>
+    <string name="compass">Compass</string>
+    <string name="projectName">Qibla Direction &amp; Prayers Time</string>
+</resources>

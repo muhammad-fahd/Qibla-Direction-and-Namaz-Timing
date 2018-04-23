@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iiui.qibladirection.PrayerTimeActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/background"
+    >
+    <!-- for latitude and longitude-->
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:background="@drawable/button_shape"
+
+        android:text="REFRESH LOCATION"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvLatitude"
+
+            android:hint="Latitude"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textAlignment="center"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tvLongitude"
+
+            android:hint="Longitude"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+
+            android:layout_width="170dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvFajarTitle"
+
+            android:hint="Fajar"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+
+            android:textAlignment="center"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tvFajarTime"
+
+            android:hint="Fajar"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+
+            android:layout_width="170dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvSunriseTitle"
+
+            android:hint="Sunrise"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tvSunriseTime"
+
+            android:hint="Sunrise"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+
+            android:layout_width="170dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvDhuhurTitle"
+
+            android:hint="Dhuhur"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tvDhuhurTime"
+
+            android:hint="Dhuhur"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+
+            android:layout_width="170dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvAsarTitle"
+
+            android:hint="Asir"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tvAsarTime"
+
+            android:hint="Asir"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+
+            android:layout_width="170dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvSunsetTitle"
+
+            android:hint="Sunset"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tvSunsetTime"
+
+            android:hint="Sunset"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+
+            android:layout_width="170dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvMaghribTitle"
+
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+
+            android:gravity="center"
+            android:hint="Maghrib"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tvMaghribTime"
+
+            android:hint="Maghrib"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+
+            android:layout_width="170dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvIshaTitle"
+
+            android:hint="Ishaa"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tvIshaTime"
+
+            android:hint="Ishaa"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+
+            android:layout_width="170dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
